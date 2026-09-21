@@ -11,22 +11,22 @@ export default function Contact() {
           ¿Preguntas? Contáctanos.
         </h2>
         <p className="font-sans text-lg md:text-xl text-altheaDeepOlive leading-relaxed mb-10">
-          Estamos aquí para ayudarte a iniciar o continuar tu camino en Pilates. Escríbenos o llámanos.
+          Estamos aquí para ayudarte a iniciar o continuar tu viaje en Pilates.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-6">
+          <a
+            href="mailto:info@altheapilates.com"
+            className="bg-altheaDeepOlive text-altheaIvory px-10 py-5 rounded-xl font-sans text-xl sm:text-2xl hover:bg-altheaSage transition-colors duration-300 w-full sm:w-auto"
+          >
+            Enviar un correo
+          </a>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-altheaDeepOlive text-altheaIvory px-10 py-5 rounded-xl font-sans text-xl sm:text-2xl hover:bg-altheaSage transition-colors duration-300 w-full sm:w-auto"
-          >
-            Enviar mensaje por WhatsApp
-          </a>
-          <a
-            href="tel:+50685258080"
             className="border border-altheaDeepOlive text-altheaDeepOlive px-10 py-5 rounded-xl font-sans text-xl sm:text-2xl hover:bg-altheaDeepOlive hover:text-altheaIvory transition-colors duration-300 w-full sm:w-auto"
           >
-            Llamar al estudio
+            Escribir por WhatsApp
           </a>
         </div>
       </div>
