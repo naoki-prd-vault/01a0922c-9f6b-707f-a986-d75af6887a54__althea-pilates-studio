@@ -15,6 +15,7 @@ IMAGE:
       PATH: /usr/sbin:/usr/bin:/sbin:/bin
   BUILD:
     - RUN: apk add --no-cache bash git nodejs npm
+    - RUN: npm install -g http-server
   VERIFY:
     - RUN: node --version
     - RUN: npm --version
@@ -36,7 +37,7 @@ WORKFLOWS:
     SETUP:
       - RUN: npm install
     RUN:
-      - RUN: npm run dev
+      - RUN: http-server . -p 3000
     TEST:
       - RUN: npm test
     CHECK:
